@@ -12,6 +12,8 @@
 
 ![Alt Text](https://lh6.googleusercontent.com/CGDqA9mQOo8XfSrOwx-DaYC41w843WLDXbS_jN9Fp96JNU1NeukNUCZ5qm3tZNnvn8J08bv0gzpP3p0gAIP4c2tZUCa8U2S5Ef_hpkbIwUjgn4uksrg7iQcZZH0atsu1AkExcjSZ)
 
+7. Run **"flutter pub get"** in command prompt (inside the project folder directory) to get all the required dependecies. (Android Studio will automatically display a prompt message top ask you to get all the required dependecies)
+
 7. Run the  code by hitting the **green run button** in Android Studio (The performance is better in Android Phone than in Android Emulator)
 
 ![Alt Text](https://i.stack.imgur.com/CSKBM.png)
