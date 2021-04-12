@@ -51,7 +51,7 @@ class _GMapState extends State<GMap> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Map'),
+        title: Text('Home'),
       ),
       body: Stack(
         children: <Widget>[

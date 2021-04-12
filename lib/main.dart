@@ -6,6 +6,7 @@ import 'package:cpss/services/email.dart';
 import 'package:cpss/services/scream.dart';
 import 'package:cpss/services/url.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'CPSS',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.amber,
       ),
       home: MyHomePage(title: 'CPSS Home'),
     );
@@ -57,9 +58,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(5.0),
                     child: ElevatedButton.icon(
-                      style: raisedButtonStyle,
+                      style: raisedButtonStyle.copyWith(
+                          backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.lightGreenAccent[400])),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(builder: (context) => GMap()));
                       },
@@ -72,13 +75,20 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(5.0),
                     child: ElevatedButton.icon(
                       style: raisedButtonStyle.copyWith(
                           backgroundColor:
-                              MaterialStateProperty.all<Color>(Colors.blue)),
+                              MaterialStateProperty.all<Color>(Colors.blueAccent)),
                       onPressed: () {
                         mail.sendMail();
+                        Fluttertoast.showToast(  
+                            msg: 'Location is sent to your parent',  
+                            toastLength: Toast.LENGTH_SHORT,  
+                            gravity: ToastGravity.BOTTOM,  
+                            backgroundColor: Colors.green,  
+                            textColor: Colors.white  
+                        );  
                       },
                       label: Text('Email'),
                       icon: Icon(
@@ -93,9 +103,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(5.0),
                     child: ElevatedButton.icon(
-                      style: raisedButtonStyle,
+                      style: raisedButtonStyle.copyWith(
+                          backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.redAccent)),
                       onPressed: () {
                         alarm.isPlay ? alarm.stop() : alarm.start();
                       },
@@ -107,9 +119,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(5.0),
                     child: ElevatedButton.icon(
-                      style: raisedButtonStyle,
+                      style: raisedButtonStyle.copyWith(
+                          backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.amberAccent)),
                       onPressed: () {
                         Navigator.of(context).push(
                             MaterialPageRoute(builder: (context) => Help()));
@@ -163,6 +177,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 tooltip: 'Call',
                 child: Icon(Icons.phone),
+                backgroundColor: Colors.greenAccent[400],
               ),
             ),
           ),
@@ -176,6 +191,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 tooltip: 'Call',
                 child: Icon(Icons.sms),
+                backgroundColor: Colors.cyan,
               ),
             ),
           ),
