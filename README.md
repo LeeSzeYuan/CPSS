@@ -9,7 +9,9 @@
 4.  Then unzipped the code to the **file location** you want
 5.  Open Android Studio (if you have installed Flutter)
 6.  Connect an *Android device (or Android Emulator)*
-Format: ![Alt Text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Fflutter%2Fflutter%2Fissues%2F26529&psig=AOvVaw1ZZgne_spD2_Qt1LTIv7LB&ust=1618293341262000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIjLjdCC-O8CFQAAAAAdAAAAABAD)
+
+![Alt Text](https://lh6.googleusercontent.com/CGDqA9mQOo8XfSrOwx-DaYC41w843WLDXbS_jN9Fp96JNU1NeukNUCZ5qm3tZNnvn8J08bv0gzpP3p0gAIP4c2tZUCa8U2S5Ef_hpkbIwUjgn4uksrg7iQcZZH0atsu1AkExcjSZ)
 
 7. Run the  code by hitting the **green run button** in Android Studio (The performance is better in Android Phone than in Android Emulator)
 
+![Alt Text](https://i.stack.imgur.com/CSKBM.png)
