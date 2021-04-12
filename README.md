@@ -1,3 +1,7 @@
+#CPSS
+
+##This is the project developed by Team Agumon for GDSC Solution Challenge 2021
+
 1.  Please install Flutter (https://flutter.dev/docs/get-started/install)
 2.  Set up the editor, Android Studio (https://flutter.dev/docs/get-started/editor)
 3.  Download the whole zip file of the code
